@@ -37,12 +37,14 @@ Jogador *criaJogador(char *nome, char *cor, int forca)
     strcpy(jogadorCriado->cor, cor);
     
     jogadorCriado->forca = forca;
-    jogadorCriado->posicao = 1;
+    jogadorCriado->posicao = 0;
     jogadorCriado->xp = 0;
     jogadorCriado->ouro = 0;
     jogadorCriado->jogadas = 0;
     jogadorCriado->disputasVencidas = 0;
     jogadorCriado->monstrosDerrotados = 0;
+
+    return jogadorCriado;
 }
 
 /**
@@ -55,10 +57,11 @@ Jogador *leJogador()
     char nome[MAX_TAM_NOME_JOGADOR] = {0}, cor[MAX_TAM_COR_JOGADOR] = {0};
     int forca;
 
+    scanf("%*[\n]");
     scanf("%[^\n]",nome);
-    scanf("%*\n");
+    scanf("%*[\n]");
     scanf("%[^\n]",cor);
-    scanf("%*\n");
+    scanf("%*[\n]");
     scanf("%d",&forca);
 
     Jogador *jogadorCriado = criaJogador(nome,cor,forca); 
@@ -74,10 +77,11 @@ Jogador *leJogador()
  */
 void *copiaJogador(void *d)
 {
-    Jogador *ptr_copiado = (Jogador*)d;
-    Jogador *jogadorCopia = criaJogador(ptr_copiado->nome,ptr_copiado->cor,ptr_copiado->forca);
+    Jogador *copia = (Jogador *)malloc(sizeof(Jogador));
+    if (copia == NULL)
+        return NULL;
 
-    return jogadorCopia;
+    *copia = *(Jogador *)d;
 }
 
 /**
@@ -109,8 +113,8 @@ int comparaNomeJogador(void *dado, void *nome)
  */
 int comparaOrdJogador(const void *d1, const void *d2)
 {
-    Jogador *ptr_elemento1 = (Jogador*)d1;
-    Jogador *ptr_elemento2 = (Jogador*)d2;
+    Jogador *ptr_elemento1 = *(Jogador**)d1;
+    Jogador *ptr_elemento2 = *(Jogador**)d2;
 
     if(ptr_elemento1->posicao > ptr_elemento2->posicao)
     {
