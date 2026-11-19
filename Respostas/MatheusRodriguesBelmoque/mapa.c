@@ -11,6 +11,7 @@ typedef struct
 {
  
     Celula** mapaCelulas;
+    int qtdCelulas;
 
 }Mapa;
 
@@ -22,7 +23,10 @@ Mapa *criaMapa()
 {
     Mapa *mapaCriado = (Mapa*)malloc(sizeof(Mapa));
 
+    mapaCriado->mapaCelulas = NULL;
+    mapaCriado->qtdCelulas = 0;
     
+    return mapaCriado;
 }
 
 /**
@@ -35,7 +39,12 @@ Mapa *criaMapa()
  * @param imprime Função de callback que imprime a ação
  * @param desaloca Função de callback que desaloca a ação
  */
-void insereCelulaMapa(Mapa *m, void *acao, func_ptr_executa executa, func_ptr_imprime imprime, func_ptr_desaloca desaloca);
+void insereCelulaMapa(Mapa *m, void *acao, func_ptr_executa executa, func_ptr_imprime imprime, func_ptr_desaloca desaloca)
+{
+    Celula *celulaCriada = criaCelula(acao,executa,imprime,desaloca);
+
+    m->mapaCelulas = (Celula**)realloc(m->mapaCelulas,sizeof(m->mapaCelulas)+ sizeof(Celula*))
+}
 
 /**
  * @brief Retorna a quantidade N de células informadas do mapa (sem contar Início e Fim)
