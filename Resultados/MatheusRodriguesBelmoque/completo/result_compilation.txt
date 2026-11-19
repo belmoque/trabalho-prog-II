@@ -1,3 +1,7 @@
+acao_monstro.c: In function ‘criaMonstro’:
+acao_monstro.c:33:1: warning: control reaches end of non-void function [-Wreturn-type]
+   33 | }
+      | ^
 jogador.c: In function ‘copiaJogador’:
 jogador.c:85:1: warning: control reaches end of non-void function [-Wreturn-type]
    85 | }
