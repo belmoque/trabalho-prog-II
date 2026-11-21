@@ -1,1 +1,24 @@
-valgrind: Resultados/MatheusRodriguesBelmoque/main/prog: No such file or directory
+[1] OURO 2
+[2] VAZIA
+[3] ITEM POCAO1 (P:3 F:+1)
+[4] VAZIA
+[5] OURO 4
+[6] VAZIA
+[7] ITEM POCAO2 (P:6 F:+1)
+[8] VAZIA
+[9] OURO 6
+[10] VAZIA
+[11] ITEM POCAO3 (P:9 F:+1)
+[12] VAZIA
+[13] OURO 8
+[14] VAZIA
+[15] ITEM POCAO4 (P:12 F:+1)
+[16] VAZIA
+[17] OURO 10
+[18] VAZIA
+[19] ITEM POCAO5 (P:15 F:+1)
+[20] VAZIA
+[21] OURO 12
+[22] VAZIA
+[23] ITEM POCAO6 (P:18 F:+1)
+[24] VAZIA

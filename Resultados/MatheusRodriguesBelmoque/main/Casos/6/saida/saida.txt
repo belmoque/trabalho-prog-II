@@ -1,1 +1,4 @@
-valgrind: Resultados/MatheusRodriguesBelmoque/main/prog: No such file or directory
+[1] OURO 5
+[2] VAZIA
+[3] ITEM BOTA (P:5 F:+1)
+[4] OURO 7

@@ -1,15 +1,15 @@
-==98199== Memcheck, a memory error detector
-==98199== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==98199== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==98199== Command: Resultados/MatheusRodriguesBelmoque/mapa/prog Resultados/MatheusRodriguesBelmoque/mapa/Casos/6
-==98199== Parent PID: 98198
-==98199== 
-==98199== 
-==98199== HEAP SUMMARY:
-==98199==     in use at exit: 0 bytes in 0 blocks
-==98199==   total heap usage: 32 allocs, 32 frees, 9,184 bytes allocated
-==98199== 
-==98199== All heap blocks were freed -- no leaks are possible
-==98199== 
-==98199== For lists of detected and suppressed errors, rerun with: -s
-==98199== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==221937== Memcheck, a memory error detector
+==221937== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==221937== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==221937== Command: Resultados/MatheusRodriguesBelmoque/mapa/prog Resultados/MatheusRodriguesBelmoque/mapa/Casos/6
+==221937== Parent PID: 221936
+==221937== 
+==221937== 
+==221937== HEAP SUMMARY:
+==221937==     in use at exit: 0 bytes in 0 blocks
+==221937==   total heap usage: 32 allocs, 32 frees, 9,184 bytes allocated
+==221937== 
+==221937== All heap blocks were freed -- no leaks are possible
+==221937== 
+==221937== For lists of detected and suppressed errors, rerun with: -s
+==221937== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

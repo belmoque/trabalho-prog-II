@@ -1,1 +1,6 @@
-valgrind: Resultados/MatheusRodriguesBelmoque/completo/prog: No such file or directory
+[1] VAZIA
+[2] VAZIA
+[3] VAZIA
+[4] OURO 1
+[5] VAZIA
+[6] VAZIA
