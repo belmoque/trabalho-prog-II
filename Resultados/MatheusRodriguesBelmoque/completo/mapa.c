@@ -1,19 +1,18 @@
-#include <stdio.h>
+#include "mapa.h"
 #include <stdlib.h>
-#include <string.h>
 #include "celula.h"
 
 /**
  * Mapa linear (trilha) composto por células. As células informadas são numeradas de 1 a N.
  * O Início (casa 0) e o Fim (casa N + 1) não possuem ação e não são armazenados como células.
  */
-typedef struct
+struct Mapa
 {
 
     Celula **mapaCelulas;
     int qtdCelulas;
 
-} Mapa;
+};
 
 /**
  * @brief Aloca dinamicamente um mapa sem nenhuma célula (vetor de células NULL e quantidade 0)
@@ -113,14 +112,10 @@ Jogador *obtemOcupanteMapa(Mapa *m, int posicao)
  */
 void retiraJogadorMapa(Mapa *m, Jogador *j)
 {
-    int pos = obtemPosicaoJogador(j);
+    Celula *c = obtemCelulaMapa(m, obtemPosicaoJogador(j));
 
-    if (pos >= 1 && pos <= obtemQtdCelulasMapa(m))
-    {
-        Celula *c = m->mapaCelulas[pos - 1];
-        if (obtemOcupanteCelula(c) == j)
-            defineOcupanteCelula(c, NULL);
-    }
+    if (c != NULL && obtemOcupanteCelula(c) == j)
+        defineOcupanteCelula(c, NULL);
 }
 
 /**
@@ -136,8 +131,9 @@ void moveJogadorMapa(Mapa *m, Jogador *j, int posicao)
     retiraJogadorMapa(m, j);
     definePosicaoJogador(j, posicao);
 
-    if (posicao >= 1 && posicao <= obtemQtdCelulasMapa(m))
-        defineOcupanteCelula(m->mapaCelulas[posicao - 1], j);
+    Celula *c = obtemCelulaMapa(m, posicao);
+    if (c != NULL)
+        defineOcupanteCelula(c, j);
 }
 
 /**

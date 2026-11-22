@@ -1,4 +1,6 @@
 [1] OURO 5
 [2] VAZIA
-[3] ITEM BOTA (P:5 F:+1)
-[4] OURO 7
+[3] AVANCA 2
+[4] ITEM BOTA (P:5 F:+1)
+[5] VOLTA 2
+[6] OURO 7

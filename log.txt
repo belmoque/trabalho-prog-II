@@ -71,6 +71,8 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Removendo o acao_monstro.o do professor da pasta Resultados/MatheusRodriguesBelmoque/acao_monstro
  - Copiando o Respostas/MatheusRodriguesBelmoque/acao_monstro.c do aluno para a pasta Resultados/MatheusRodriguesBelmoque/acao_monstro
  - Copiando Arquivos Extras do Aluno:
+ - Copiando Respostas/MatheusRodriguesBelmoque/avancar_voltar.c para Resultados/MatheusRodriguesBelmoque/main
+ - Copiando Respostas/MatheusRodriguesBelmoque/avancar_voltar.c para Resultados/MatheusRodriguesBelmoque/completo
  - Copiando Respostas/MatheusRodriguesBelmoque/dado.c para Resultados/MatheusRodriguesBelmoque/main
  - Copiando Respostas/MatheusRodriguesBelmoque/dado.c para Resultados/MatheusRodriguesBelmoque/completo
  - Copiando Respostas/MatheusRodriguesBelmoque/item.c para Resultados/MatheusRodriguesBelmoque/main
@@ -81,6 +83,8 @@ COPIANDO OS ARQUIVOS PARA A PASTA DE RESULTADO DO ALUNO:
  - Copiando Respostas/MatheusRodriguesBelmoque/registra_mapa.c para Resultados/MatheusRodriguesBelmoque/completo
  - Copiando Respostas/MatheusRodriguesBelmoque/vazio.c para Resultados/MatheusRodriguesBelmoque/main
  - Copiando Respostas/MatheusRodriguesBelmoque/vazio.c para Resultados/MatheusRodriguesBelmoque/completo
+ - Copiando Respostas/MatheusRodriguesBelmoque/avancar_voltar.h para Resultados/MatheusRodriguesBelmoque/main
+ - Copiando Respostas/MatheusRodriguesBelmoque/avancar_voltar.h para Resultados/MatheusRodriguesBelmoque/completo
  - Copiando Respostas/MatheusRodriguesBelmoque/dado.h para Resultados/MatheusRodriguesBelmoque/main
  - Copiando Respostas/MatheusRodriguesBelmoque/dado.h para Resultados/MatheusRodriguesBelmoque/completo
  - Copiando Respostas/MatheusRodriguesBelmoque/item.h para Resultados/MatheusRodriguesBelmoque/main
@@ -137,17 +141,17 @@ LINKANDO OS ARQUIVOS COMPILADOS:
 EXECUTANDO O VALGRIND EM CADA CASO:
  - Pasta main / Caso 1:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/main/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 21, frees: 21, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 10:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/main/Casos/10/result_valgrind.txt.
- - Valgrind: Ok! allocs: 21, frees: 21, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 2:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/main/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 21, frees: 21, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 3:
@@ -157,7 +161,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 4:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/main/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 9, frees: 9, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 5:
@@ -167,7 +171,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 6:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/main/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 14, frees: 14, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 20, frees: 20, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 7:
@@ -177,29 +181,29 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 8:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/main/Casos/8/result_valgrind.txt.
- - Valgrind: Ok! allocs: 16, frees: 16, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 28, frees: 28, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta main / Caso 9:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/main/Casos/9/result_valgrind.txt.
- - Valgrind: Ok! allocs: 63, frees: 63, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 99, frees: 99, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Nota para a pasta main (máximo 7.0) - 0 de 100 - 0% de 7.0: 0.
  -----
  - Pasta completo / Caso 1:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/completo/Casos/1/result_valgrind.txt.
- - Valgrind: Ok! allocs: 21, frees: 21, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 10:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/completo/Casos/10/result_valgrind.txt.
- - Valgrind: Ok! allocs: 21, frees: 21, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 2:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/completo/Casos/2/result_valgrind.txt.
- - Valgrind: Ok! allocs: 21, frees: 21, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 27, frees: 27, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 3:
@@ -209,7 +213,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 4:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/completo/Casos/4/result_valgrind.txt.
- - Valgrind: Ok! allocs: 9, frees: 9, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 36, frees: 36, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 5:
@@ -219,7 +223,7 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 6:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/completo/Casos/6/result_valgrind.txt.
- - Valgrind: Ok! allocs: 14, frees: 14, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 20, frees: 20, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 7:
@@ -229,12 +233,12 @@ EXECUTANDO O VALGRIND EM CADA CASO:
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 8:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/completo/Casos/8/result_valgrind.txt.
- - Valgrind: Ok! allocs: 16, frees: 16, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 28, frees: 28, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Pasta completo / Caso 9:
  - Arquivo de output gerado: Resultados/MatheusRodriguesBelmoque/completo/Casos/9/result_valgrind.txt.
- - Valgrind: Ok! allocs: 63, frees: 63, errors: 0 | Desconto do valgrind: 0.0%
+ - Valgrind: Ok! allocs: 99, frees: 99, errors: 0 | Desconto do valgrind: 0.0%
  - Resultado para o saida.txt: Incorreto! Peso: 0.0
  - Nota para o Caso (soma dos pesos): 0 (soma total) - 0% (desconto do valgrind) = 0 de 10 pontos.
  - Nota para a pasta completo (máximo 0) - 0 de 100 - 0% de 0: 0.

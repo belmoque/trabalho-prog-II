@@ -1,54 +1,24 @@
+#include "celula.h"
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <limits.h>
 #include "jogador.h"
-
-/**
- * Valor especial retornado pela execução de uma ação para indicar que o jogador deve recuar
- * (ex: perdeu o confronto com um monstro). O recuo depende da ocupação do mapa e, por isso,
- * não é um deslocamento fixo: quem trata é o módulo que conduz a partida.
- */
-#define RECUO_CELULA INT_MIN
-
-/**
- * @brief Função de callback para executar a ação de uma célula sobre um jogador. A função deve
- * alterar apenas o jogador e informar o deslocamento resultante.
- * @param acao um tipo genérico para representar os tipos de ação
- * @param j jogador que parou na célula
- * @return deslocamento resultante (0 se não houver, positivo para avançar, negativo para voltar)
- *         ou RECUO_CELULA se o jogador deve recuar
- */
-typedef int (*func_ptr_executa)(void *acao, Jogador *j);
-
-/**
- * @brief Função de callback para imprimir a ação de uma célula (sem quebra de linha)
- * @param acao um tipo genérico para representar os tipos de ação
- */
-typedef void (*func_ptr_imprime)(void *acao);
-
-/**
- * @brief Função de callback para desalocar da memória uma implementação específica de ação
- * @param acao um tipo genérico para representar os tipos de ação
- */
-typedef void (*func_ptr_desaloca)(void *acao);
 
 /**
  * Estrutura de uma Célula do mapa contendo os parâmetros comuns a todas as células e uma ação genérica
  * (OURO, MONSTRO, ITEM, AVANCA, VOLTA, VAZIA...). Cada célula comporta no máximo um jogador.
  */
-typedef struct 
+struct Celula
 {
     
     void* acaoCelula;
     Jogador* ocupante;
-    int temPlayer;
     func_ptr_desaloca desalocaAcao;
     func_ptr_executa executaAcaoCelula;
     func_ptr_imprime imprimeAcao;
     
     
-}Celula;
+};
 
 /**
  * @brief Aloca dinamicamente uma célula e guarda nela o ponteiro para a ação genérica e as três

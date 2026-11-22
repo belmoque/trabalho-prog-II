@@ -1,11 +1,9 @@
+#include "jogador.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_TAM_NOME_JOGADOR 51
-#define MAX_TAM_COR_JOGADOR 16
-
-typedef struct 
+struct Jogador
 {
 
     char nome[MAX_TAM_NOME_JOGADOR];
@@ -18,7 +16,7 @@ typedef struct
     int disputasVencidas;
     int monstrosDerrotados;
     
-}Jogador;
+};
 
 /**
  * @brief Aloca dinamicamente um jogador e copia o nome e a cor informados. O jogador inicia no

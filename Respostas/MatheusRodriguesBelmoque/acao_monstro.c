@@ -1,19 +1,18 @@
+#include "acao_monstro.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include "jogador.h"
 #include "celula.h"
 #include <string.h>
 
-#define MAX_TAM_NOME_MONSTRO 21
-
-typedef struct 
+struct Monstro
 {
  
     char nome[MAX_TAM_NOME_MONSTRO];
     int forca;
     int xp;
     
-}Monstro;
+};
 
 /**
  * @brief Aloca dinamicamente uma ação do tipo MONSTRO e guarda nela o nome (copiado), a força e a XP
