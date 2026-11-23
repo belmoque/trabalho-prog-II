@@ -22,7 +22,7 @@ int executaOuro(void *dados, Jogador *j)
 
     adicionaOuroJogador(j,ouroCast->qtd);
 
-    return ouroCast->qtd;
+    return 0;
 }
 
 /**

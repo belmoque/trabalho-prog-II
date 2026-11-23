@@ -80,6 +80,8 @@ void *copiaJogador(void *d)
         return NULL;
 
     *copia = *(Jogador *)d;
+
+    return copia;
 }
 
 /**

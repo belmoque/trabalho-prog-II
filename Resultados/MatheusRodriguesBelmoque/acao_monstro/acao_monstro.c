@@ -29,6 +29,8 @@ Monstro *criaMonstro(char *nome, int forca, int xp)
     strcpy(monstroCriado->nome,nome);
     monstroCriado->forca = forca;
     monstroCriado->xp = xp;
+
+    return monstroCriado;
 }
 
 /**
@@ -38,9 +40,9 @@ Monstro *criaMonstro(char *nome, int forca, int xp)
  */
 Monstro *leMonstro()
 {
-    char nome[MAX_TAM_NOME_JOGADOR] = {0};
+    char nome[MAX_TAM_NOME_MONSTRO] = {0};
     int forca, xp;
-    scanf(" %s %d %d",nome,&forca,&xp);
+    scanf(" %20s %d %d",nome,&forca,&xp);
 
     return criaMonstro(nome,forca,xp);
 

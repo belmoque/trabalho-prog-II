@@ -1,15 +1,15 @@
-==71031== Memcheck, a memory error detector
-==71031== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
-==71031== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
-==71031== Command: Resultados/MatheusRodriguesBelmoque/acao_monstro/prog Resultados/MatheusRodriguesBelmoque/acao_monstro/Casos/5
-==71031== Parent PID: 71030
-==71031== 
-==71031== 
-==71031== HEAP SUMMARY:
-==71031==     in use at exit: 0 bytes in 0 blocks
-==71031==   total heap usage: 75 allocs, 75 frees, 11,704 bytes allocated
-==71031== 
-==71031== All heap blocks were freed -- no leaks are possible
-==71031== 
-==71031== For lists of detected and suppressed errors, rerun with: -s
-==71031== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==82838== Memcheck, a memory error detector
+==82838== Copyright (C) 2002-2024, and GNU GPL'd, by Julian Seward et al.
+==82838== Using Valgrind-3.26.0 and LibVEX; rerun with -h for copyright info
+==82838== Command: Resultados/MatheusRodriguesBelmoque/acao_monstro/prog Resultados/MatheusRodriguesBelmoque/acao_monstro/Casos/5
+==82838== Parent PID: 82837
+==82838== 
+==82838== 
+==82838== HEAP SUMMARY:
+==82838==     in use at exit: 0 bytes in 0 blocks
+==82838==   total heap usage: 75 allocs, 75 frees, 11,704 bytes allocated
+==82838== 
+==82838== All heap blocks were freed -- no leaks are possible
+==82838== 
+==82838== For lists of detected and suppressed errors, rerun with: -s
+==82838== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

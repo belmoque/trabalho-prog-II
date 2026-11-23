@@ -5,6 +5,7 @@
 #include "item.h"
 #include "vazio.h"
 #include "avancar_voltar.h"
+#include "acao_monstro.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -57,5 +58,15 @@ int leMapa(Mapa *m)
 
             insereCelulaMapa(m,v,executaVaiVolta,imprimeVaiVolta,desalocaVaiVolta);
         }
+        else if(strcmp(leituraAtual, "MONSTRO")==0)
+        {
+            Monstro *monstro = leMonstro();
+
+            insereCelulaMapa(m,monstro,executaMonstro,imprimeMonstro,desalocaMonstro);
+        }
     }
+
+    
+
+    return 0;
 }

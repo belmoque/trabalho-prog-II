@@ -1,4 +1,0 @@
-registra_mapa.c: In function ‘leMapa’:
-registra_mapa.c:61:1: warning: control reaches end of non-void function [-Wreturn-type]
-   61 | }
-      | ^
